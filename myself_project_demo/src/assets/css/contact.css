@@ -1,0 +1,123 @@
+.body-container{
+  width:1140px;
+  height:422px;
+  margin:0 auto;
+  text-align: center;
+}
+.body-container h1{
+  font-size: 48px;
+  color: #147efb;
+  letter-spacing: 1px;
+  font-family: 'Cookie', cursive;
+}
+.body-container p{
+  text-align: center;
+  color: #0e0e0e;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top:-50px;
+}
+.contact_grid{
+  width:1400px;
+  margin: auto;
+  position:relative;
+}
+.contact_grid .contact_grid_num{
+  width:1200px;
+  height:1000px;
+  text-align: center;
+  margin:0 auto;
+}
+.contact_grid .contact_grid_num .contact_grid_left{
+  display:inline-block;
+  margin:70px 10px 20px 10px;
+  width:360px;
+  height:115px;
+  background:#0c0c0c;
+  position:relative;
+  box-sizing: border-box;
+}
+.contact_grid .contact_grid_num .contact_grid_left div{
+  display:inline-block;
+  position:absolute;
+  left:30px;
+  top:25px;
+}
+.contact_grid .contact_grid_num .contact_grid_left div.contact-way{
+  position:absolute;
+  text-align:left;
+  left:100px;
+}
+.contact_grid .contact_grid_num .contact_grid_left div.contact-icon{
+  float: left;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height:65px;
+  background: #fc3158;
+}
+.contact_grid .contact_grid_num .contact_grid_left div.contact-icon span{
+  color: #fff;
+  font-size: 20px;
+  height:55px;
+}
+
+.contact_grid .contact_grid_num .contact_grid_left div.contact-way p{
+  margin-top:10px;
+  color: #999;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact_grid .contact_grid_num .contact_grid_left div.contact-way h4{
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: 'Cookie', cursive;
+}
+
+.contact_grid .contact_email{
+  margin:0 37px 0 37px;
+  text-align:left;
+}
+
+.contact_grid .contact_email .contact_email_text input{
+  border: 1px solid #e4e4e4;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #555;
+  width: 100%;
+  background: #f5f5f5;
+  padding: 1em 1em;
+}
+.contact_grid .contact_email .contact_email_textarea textarea{
+  height:199px;
+  outline: none;
+  width: 100%;
+  background: #f5f5f5;
+  padding: 1em 1em;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #555;
+  border: 1px solid #e4e4e4;
+  min-height: 196px;
+  font-weight: 400;
+}
+.contact_grid .contact_email .contact_email_textarea input{
+  border: none;
+  padding: 12px 24px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: none;
+  background: #fc3158;
+  transition: 0.5s all linear;
+}
+.contact_grid .contact_email .contact_email_textarea input:hover{
+  background: #147efb;
+}

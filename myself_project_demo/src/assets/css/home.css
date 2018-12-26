@@ -1,0 +1,432 @@
+/****************轮播*******************/
+.banner{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.banner>div{
+  position:absolute;
+  top:0;
+  width:190px;
+  height:710px;
+  background:url(../image/1.jpg) no-repeat;
+  background-size:cover;
+}
+.banner>div:nth-child(3){
+  left:190px;
+  background-position:-190px 0;
+}
+.banner>div:nth-child(4){
+  left:380px;
+  background-position:-380px 0;
+}
+.banner>div:nth-child(5){
+  left:570px;
+  background-position:-570px 0;
+}
+.banner>div:nth-child(6){
+  left:760px;
+  background-position:-760px 0;
+}
+.banner>div:nth-child(7){
+  left:950px;
+  background-position:-950px 0;
+}
+.banner>div:nth-child(8){
+  left:1140px;
+  background-position:-1140px 0;
+}
+.banner>div:nth-child(9){
+  left:1330px;
+  background-position:-1330px 0;
+}
+.banner>div:nth-child(10){
+  left:1520px;
+  background-position:-1520px 0;
+}
+.banner>div:nth-child(11){
+  left:1710px;
+  background-position:-1710px 0;
+}
+@keyframes shake {
+  0%{top:0}
+  25%{top:-150px}
+  50%{top:100px}
+  65%{top:-120px}
+  80%{top:120px}
+  90%{top:-100px}
+  100%{top:0}
+}
+/*将animation放在class中,在把class放在元素里*/
+.banner>div.shake{
+  -webkit-animation:shake .5s linear;
+}
+
+/****************人物介绍***************************/
+.introduce{
+  width:1000px;
+  height:800px;
+  margin:0 auto;
+  text-align:center;
+
+}
+.introduce .bridegroom,.bride{
+  width:400px;
+  height:400px;
+  display:inline-block;
+  border-radius: 50%;
+  margin:30px 40px 30px 40px;
+  position:relative;
+  background:#87ceeb;
+}
+.introduce .bridegroom .trace,.bride .trice{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.introduce .bridegroom:hover .trace,.bride:hover .trice{
+  opacity:1;
+}
+.introduce .bridegroom h2,.bride h2{
+  text-align:center;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin:90px auto;
+  line-height:400px;
+  opacity:0;
+}
+.introduce .bridegroom:hover h2,.bride:hover h2{
+  opacity:1;
+}
+.introduce .bride h3,.bridegroom h3{
+  font-size: 36px;
+  margin-top: 12px;
+  color: #fc3158;
+  letter-spacing: 1px;
+  font-family: 'Cookie', cursive;
+  font-weight:400;
+}
+.introduce .bride p,.bridegroom p{
+  font-size: 1em;
+  color: #555;
+  letter-spacing: 1px;
+  margin: 12px 0 24px 0;
+  line-height: 24px;
+}
+.introduce .bride span,.bridegroom span{
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  background: #181819;
+  line-height: 30px;
+  -webkit-transition:all .5s linear;
+  margin:10px 10px 10px 10px;
+  color:#ffffff;
+}
+.introduce .bridegroom img,.bride img{
+  border-radius: 50%;
+  -webkit-transition:all .5s linear;
+}
+.introduce .bride:hover img,.bridegroom:hover img{
+  -webkit-transform:scale(0.5) translate(0,-120px);
+}
+.introduce .bride span:hover,.bridegroom span:hover{
+  background:#147efb;
+}
+.time-down{
+  width:100%;
+  height:700px;
+  background:url("../image/sample_big.jpg") no-repeat fixed;
+  background-size:cover;
+}
+.time-down .time{
+  width:1000px;
+  height:500px;
+  margin:0 auto;
+  text-align:center;
+}
+.time-down .time h4{
+  line-height:500px;
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 10px;
+  font-family:  'Open Sans', sans-serif;;
+}
+.time-down .time p{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 10px;
+  color: #fc3158;
+  font-family: 'Open Sans', sans-serif;
+  margin-top:-150px;
+}
+.time-down .time span{
+  font-size: 40px;
+  line-height:200px;
+  color: #fff;
+  margin:10px 20px 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+/******************样照鉴赏************************/
+.sample-title{
+  border-bottom:5px solid #dbdbdb;
+  margin-top:40px;
+  position:relative;
+}
+.sample-title p{
+  position:absolute;
+  top:-25px;
+  left:450px;
+  font-size:50px;
+  font-weight:bold;
+  color:#808080;
+  background:#f2f2f2;
+  letter-spacing: 20px;
+}
+.sample{
+  width:1240px;
+  margin:100px auto;
+}
+.sample ul{
+  width:1240px;
+  height:932px;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.sample ul li{
+  position:relative;
+}
+.sample ul li.sample-big img{
+  width:610px;
+  height:436px;
+}
+.sample ul li.sample-small img{
+  width:295px;
+  height:436px;
+}
+.sample ul .shadow{
+  width:100%;
+  height:436px;
+  position:absolute;
+  left:0;
+  top:0;
+  background:#000;
+  opacity:0;
+  transition:opacity 1s linear;
+}
+.sample>ul li:hover .shadow{
+  opacity:0.3;
+}
+.sample ul li.sample-big .draw{
+  width:360px;
+  height:160px;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+}
+.sample ul li.sample-big .draw .sample1{
+  position:absolute;
+  top:0;
+  left:20px;
+  width:0;
+  border-color:#fff;
+  transition:all .5s linear;
+}
+.sample ul li.sample-big:hover .sample1{
+  width:360px;
+  border:1px solid #fff;
+}
+.sample ul li.sample-big .draw .sample2{
+  position:absolute;
+  top:0;
+  right:0;
+  color:#fff;
+  height:0;
+  transition:all .5s linear;
+}
+.sample ul li.sample-big:hover .sample2{
+  border:1px solid #ffffff;
+  height:170px;
+}
+.sample ul li.sample-big .draw .sample3{
+  position:absolute;
+  right:0;
+  bottom:10px;
+  width:0;
+  border-color:#fff;
+  transition:all .5s linear;
+}
+.sample ul li.sample-big:hover .sample3{
+  border:1px solid #ffffff;
+  width:358px;
+}
+.sample ul li.sample-big .draw .sample4{
+  position:absolute;
+  left:20px;
+  bottom:10px;
+  height:0;
+  border-color:#fff;
+  transition:all .5s linear;
+}
+.sample ul li.sample-big:hover .sample4{
+  border:1px solid #ffffff;
+  height:170px;
+}
+.sample ul li.sample-small .draw{
+  width:200px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+}
+.sample ul li.sample-small .draw .sample1{
+  position:absolute;
+  left:20px;
+  top:0;
+  width:0;
+  border:#fff;
+  -webkit-transition:all .5s linear;
+}
+.sample ul li.sample-small:hover .sample1{
+  border:1px solid #ffffff;
+  width:200px;
+}
+.sample ul li.sample-small .draw .sample2{
+  position:absolute;
+  top:0;
+  right:0;
+  height:0;
+  border-color:#fff;
+  -webkit-transition:all .5s linear;
+}
+.sample ul li.sample-small:hover .sample2{
+  border:1px solid #ffffff;
+  height:120px;
+}
+.sample ul li.sample-small .draw .sample3{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0;
+  border-color:#fff;
+  -webkit-transition:all .5s linear;
+}
+.sample ul li.sample-small:hover .sample3{
+  border:1px solid #ffffff;
+  width:200px;
+}
+.sample ul li.sample-small .draw .sample4{
+  position:absolute;
+  left:20px;
+  bottom:0;
+  height:0;
+  border-color:#fff;
+  -webkit-transition:all .5s linear;
+}
+.sample ul li.sample-small:hover .sample4{
+  border:1px solid #ffffff;
+  height:120px;
+}
+.sample ul li.sample-big div h1{
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 160px;
+  text-align: center;
+  opacity: 0;
+  letter-spacing: 3px;
+  transition: opacity 1s linear;
+}
+.sample ul li.sample-big:hover h1{
+  opacity:1;
+}
+.sample ul li.sample-small div h3{
+  margin-left:20px;
+  line-height:80px;
+  font-weight:bold;
+  color:#fff;
+  opacity:0;
+  text-align:center;
+  letter-spacing: 3px;
+  -webkit-transition:all .5s linear;
+}
+.sample ul li.sample-small:hover h3{
+  opacity:1;
+}
+
+/***************************外景照片*************************/
+.outdoor{
+  width:100%;
+  height:650px;
+  margin:50px auto;
+  text-align:center;
+}
+.outdoor ul li{
+  display:inline-block;
+  margin:20px 15px 20px 15px;
+  position:relative;
+  width:400px;
+  height:270px;
+  overflow: hidden;
+}
+.outdoor ul li div{
+  width:100%;
+  height:60px;
+  position:absolute;
+  top:0;
+  left:0;
+  background:#000000;
+  opacity:0;
+  -webkit-transition:all 1s linear;
+}
+.outdoor ul li div h3{
+  line-height:40px;
+  color:#ffffff;
+  letter-spacing: 3px;
+  font-size:15px;
+  font-family: 'Open Sans', sans-serif;
+}
+.outdoor ul li div p{
+  color:#ffffff;
+  letter-spacing: 3px;
+  font-size:8px;
+  font-family: 'Open Sans', sans-serif;
+}
+.outdoor ul li:hover div{
+  opacity:0.3;
+}
+.outdoor ul li img{
+  width:400px;
+  height:270px;
+  -webkit-transition:all 1s linear;
+}
+.outdoor ul li:hover img{
+  transform:scale(1.3);
+}
+/*****************轮播图左右小箭头********************/
+ img[alt="rt"]{
+  position:relative;
+  left:1562px;
+  top:-2278px;
+  background:#000000;
+}
+ img[alt="lt"]{
+   position:relative;
+   top:-2278px;
+   left:242px ;
+   background:#000000;
+ }
